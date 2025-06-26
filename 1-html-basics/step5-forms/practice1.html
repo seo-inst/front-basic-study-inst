@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML 기본 폼 구조</title>
+  </head>
+  <body>
+    <h1>회원 가입 폼</h1>
+    <!--
+        HTML -> 정적인 특성 , 쌍방향 소통을 위한 form tag 
+        action : 폼 데이터를 처리할 url (처리할 서버 프로그램의 위치)
+        method : get , post , put , delete , update 등 이후 공부예정 => 데이터 전송 방식  
+    -->
+    <form action="register.jsp" method="get">
+      <!-- label: 입력필드의 설명 (for에 입력양식의 id를 연결)  -->
+      <label for="username">사용자명:</label>
+      
+      <input type="text" id="username" name="username" />
+      <br><br>
+      <input type="submit" value="회원가입">
+    </form>
+  </body>
+</html>
