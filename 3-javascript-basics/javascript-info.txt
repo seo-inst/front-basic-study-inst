@@ -19,8 +19,8 @@ ES6(ECMA6, 2015) : 변수 선언 let , const(상수) -> Block level (자바의 �
 **변수와 스코프**
 - var vs let vs const 
 var (ES5) : 중복 선언 가능 , function level scope -> 호이스팅(hosting) undefined 초기화 
-let (ES6) : 중복 선언 불가 , block level scope , 재할당 가능 -> 호이스팅(hosting)  초기화 X , 초기화 없이 사용시 Reference Error 발생 
-const (ES6) : 중복 선언 불가 , block level scope , 재할당 불가 -> 상수 -> 호이스팅(hosting) 초기화 X , 초기화 없이 사용시 Reference Error 발생
+let (ES6) : 중복 선언 불가 , block level scope , 재할당 가능 -> 호이스팅(hosting) : TDZ(Temporal Dead Zone: 호이스팅 ~ 초기화 지점 코드 영역)  초기화 X , 초기화 없이 사용시 Reference Error 발생 
+const (ES6) : 중복 선언 불가 , block level scope , 재할당 불가 -> 상수 -> 호이스팅(hosting) : TDZ(Temporal Dead Zone: 호이스팅 ~ 초기화 지점 코드 영역) 초기화 X , 초기화 없이 사용시 Reference Error 발생
 
 **Scope(스코프)**
 변수에 접근할 수 있는 유효한 범위 
